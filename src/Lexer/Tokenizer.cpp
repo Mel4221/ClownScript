@@ -20,6 +20,13 @@ namespace ClownScript
             // No need to delete since Input is not dynamically allocated
            // delete Tokens;
         }
+        Token Tokenizer::HandleKeywordOrIdentyfier()
+        {
+            Token token();
+
+
+            return token; 
+        }
         // Tokenize method without input
         vector<Token> Tokenizer::Tokenize() 
         {
@@ -28,12 +35,10 @@ namespace ClownScript
 
                     if (std::isalpha(current) || current == '_') 
                     {
-                        
+                        Tokens.push_back(HandleKeywordOrIdentyfier());
                     }
 
-
-
-                Position++;
+                    Position++;
             }
             
 

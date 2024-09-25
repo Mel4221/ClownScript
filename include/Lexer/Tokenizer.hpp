@@ -15,7 +15,7 @@ namespace ClownScript
             private:vector<Token> Tokens; 
             public: vector<Token> Tokenize();
             public: vector<Token> Tokenize(string input);
-
+            public: Token HandleKeywordOrIdentyfier();
             public: Tokenizer();
             public: Tokenizer(string input);
             public: ~Tokenizer();
