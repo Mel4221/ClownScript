@@ -1,0 +1,3 @@
+/home/mel/Documents/C++/ClownScript/build/CMakeFiles/clownscript.dir
+/home/mel/Documents/C++/ClownScript/build/CMakeFiles/edit_cache.dir
+/home/mel/Documents/C++/ClownScript/build/CMakeFiles/rebuild_cache.dir

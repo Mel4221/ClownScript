@@ -1,0 +1,84 @@
+Start
+└── Source Code
+    └── Lexer
+        ├── Input Start
+        ├── Character Read
+        │   ├── Whitespace Encountered
+        │   ├── Identifier/Keyword Start
+        │   ├── String Literal Start
+        │   └── Symbol Encountered
+        ├── End of Input
+        └── Output Tokens
+            └── Token List
+                ├── Keyword: function
+                ├── Identifier: greet
+                ├── Symbol: (
+                ├── Identifier: name
+                ├── Symbol: )
+                ├── Symbol: {
+                ├── Keyword: return
+                ├── StringLiteral: "Hello, "
+                ├── Operator: +
+                ├── Identifier: name
+                ├── Symbol: ;
+                ├── Symbol: }
+                ├── Identifier: result
+                ├── Symbol: =
+                ├── Call: greet
+                ├── StringLiteral: "World"
+                ├── Symbol: ;
+                ├── Keyword: print
+                ├── Symbol: (
+                ├── Identifier: result
+                ├── Symbol: )
+                └── Symbol: ;
+                
+    └── Parser
+        ├── Token Stream Start
+        ├── Token Read
+        │   ├── Match Keyword: function
+        │   ├── Parse Function Definition
+        │   │   ├── Function Name: greet
+        │   │   ├── Parse Parameters
+        │   │   │   └── Parameter: name
+        │   │   ├── Parse Function Body
+        │   │   │   ├── Match Keyword: return
+        │   │   │   ├── Parse Return Value
+        │   │   │   ├── String Literal: "Hello, "
+        │   │   │   ├── Operator: +
+        │   │   │   ├── Identifier: name
+        │   │   │   └── End of Function Body
+        │   │   └── End of Function Definition
+        │   └── End of Stream
+        └── Output AST
+            ├── FunctionNode
+            │   ├── Name: greet
+            │   ├── Parameters: [name]
+            │   └── Body: ReturnNode
+            │       └── Value: BinaryExpression
+            │           ├── Left: StringLiteral
+            │           └── Right: Identifier
+            ├── CallNode
+            │   ├── FunctionName: greet
+            │   └── Arguments: [StringLiteral: "World"]
+            └── PrintNode
+                └── Value: Identifier: result
+
+    └── Interpreter
+        ├── AST Traversal Start
+        ├── Visit FunctionNode
+        │   └── Store Function Definition
+        ├── Visit CallNode
+        │   ├── Execute greet("World")
+        │   └── Return Value
+        └── Visit PrintNode
+            └── Output Result
+
+    └── Runtime Environment
+        ├── Execution Context Start
+        ├── Variable Management
+        │   └── Store Variables
+        ├── Function Invocation
+        ├── Memory Allocation
+        ├── Garbage Collection (if needed)
+        └── Execution Context End

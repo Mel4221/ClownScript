@@ -1,0 +1,3 @@
+#ifndef Lexer_Node
+#define Lexer_Node
+#endif // Lexer_Node

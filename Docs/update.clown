@@ -1,0 +1,66 @@
+using scripts
+namespace updater
+include "http://clownapps.com/clownshell/scripts.clown"
+include "/usr/update dtf/str_dnf/a b c d/lastest/test.clown"
+
+
+
+"
+There are 2 styles that i have in mind 
+one that looks more like a functional language
+and the other one more similar to bash
+"
+
+@person.user_name = mel
+@person.user_email = mel@gmail.com 
+
+
+# Sytle 1
+update ->
+    wget "http://www.github.com/user/updates.clown" -o $"{shell_temp/update.clown}"
+    shell_update 
+return void 
+
+try update -> catch @error -> print $"{@error.message
+there has been an error while trying to process the update
+please try to check your internet connection or the server}"
+
+try update -> 
+    catch @error -> 
+    print $"{@error.message
+    there has been an error while trying to process the update
+please try to check your internet connection or the server
+    }"
+
+update_sys ->
+    $update = $"{$temp/update/sys.update}"
+
+    @result = wget "http://www.github.com/user/updates.clown" -o $"{shell_temp/update.clown}"
+
+    
+    if @result.number == 1 -> return @error
+    
+    @result = shell update -f $update
+
+    if @result.number == 1 -> return @error
+    
+    @result = shell self_check
+
+    if  @result.number == 0 && 
+        @result.errors == 0 -> 
+        clear_temp $update   
+
+    if  @result.number == 0 && 
+        @result.errors == 0 -> 
+        clear_temp $update
+
+
+
+
+async -> load_paths
+
+add @list ->
+
+return a*b*c
+
+clear_temp path -> rm -r $path
