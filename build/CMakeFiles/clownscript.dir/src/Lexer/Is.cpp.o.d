@@ -1,6 +1,8 @@
-CMakeFiles/clownscript.dir/src/Init/main.cpp.o: \
- /home/mel/Documents/C++/ClownScript/src/Init/main.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/12/iostream \
+CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.o: \
+ /home/mel/Documents/C++/ClownScript/src/Lexer/Is.cpp \
+ /usr/include/stdc-predef.h \
+ /home/mel/Documents/C++/ClownScript/src/Lexer/../../include/Lexer/Is.hpp \
+ /usr/include/c++/12/iostream \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -145,21 +147,7 @@ CMakeFiles/clownscript.dir/src/Init/main.cpp.o: \
  /usr/include/c++/12/bits/locale_facets.tcc \
  /usr/include/c++/12/bits/basic_ios.tcc \
  /usr/include/c++/12/bits/ostream.tcc /usr/include/c++/12/istream \
- /usr/include/c++/12/bits/istream.tcc /usr/include/c++/12/fstream \
- /usr/include/c++/12/bits/codecvt.h \
- /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
- /usr/include/c++/12/bits/fstream.tcc /usr/include/c++/12/sstream \
- /usr/include/c++/12/bits/sstream.tcc /usr/include/c++/12/vector \
- /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc \
- /home/mel/Documents/C++/ClownScript/src/Init/../../include/Lexer/Tokenizer.hpp \
- /home/mel/Documents/C++/ClownScript/src/Init/../../include/Lexer/Token.hpp \
- /home/mel/Documents/C++/ClownScript/src/Init/../../include/Lexer/TokenType.hpp \
- /home/mel/Documents/C++/ClownScript/src/Init/../../include/Lexer/Is.hpp \
- /usr/include/c++/12/unordered_set \
+ /usr/include/c++/12/bits/istream.tcc /usr/include/c++/12/unordered_set \
  /usr/include/c++/12/ext/aligned_buffer.h \
  /usr/include/c++/12/bits/hashtable.h \
  /usr/include/c++/12/bits/hashtable_policy.h /usr/include/c++/12/tuple \

@@ -81,12 +81,12 @@ clean: CMakeFiles/clownscript.dir/clean
 CMakeFiles/clownscript.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mel/Documents/C++/ClownScript/build/CMakeFiles --progress-num=1,2,3 "Built target clownscript"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mel/Documents/C++/ClownScript/build/CMakeFiles --progress-num=1,2,3,4 "Built target clownscript"
 .PHONY : CMakeFiles/clownscript.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/clownscript.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mel/Documents/C++/ClownScript/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mel/Documents/C++/ClownScript/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/clownscript.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mel/Documents/C++/ClownScript/build/CMakeFiles 0
 .PHONY : CMakeFiles/clownscript.dir/rule

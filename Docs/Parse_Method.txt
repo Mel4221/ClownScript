@@ -1,0 +1,70 @@
+#include <string>
+
+class Token {
+public:
+    TokenType Type;
+    std::string Value;
+
+    // Constructor
+    Token(TokenType type = TokenType::Unknown, const std::string& value = "")
+        : Type(type), Value(value) {}
+};
+
+class TokenParser {
+public:
+    static Token Parse(const std::string& value) {
+        Token token;  // Local token object
+
+        // Use a switch statement for string matching
+        if (value == "using") {
+            token.Type = TokenType::Using;
+        } else if (value == "namespace") {
+            token.Type = TokenType::Namespace;
+        } else if (value == "include") {
+            token.Type = TokenType::Include;
+        } else if (value == "return") {
+            token.Type = TokenType::Return;
+        } else if (value == "if") {
+            token.Type = TokenType::Conditional;
+        } else if (value == "try") {
+            token.Type = TokenType::Try;
+        } else if (value == "catch") {
+            token.Type = TokenType::Catch;
+        } else if (value == "async") {
+            token.Type = TokenType::Async;
+        } else if (isIdentifier(value)) {
+            token.Type = TokenType::Identifier;
+        } else if (isStringLiteral(value)) {
+            token.Type = TokenType::StringLiteral;
+        } else if (isOperator(value)) {
+            token.Type = TokenType::Operator;
+        } else if (isSymbol(value)) {
+            token.Type = TokenType::Symbol;
+        } else {
+            token.Type = TokenType::Unknown; // Default case
+        }
+
+        token.Value = value; // Assign the original value
+        return token; // Return the constructed token
+    }
+
+private:
+    static bool isIdentifier(const std::string& str) {
+        return !str.empty() && std::isalpha(str[0]);
+    }
+
+    static bool isStringLiteral(const std::string& str) {
+        return (str.size() >= 2 && str.front() == '"' && str.back() == '"');
+    }
+
+    static bool isOperator(const std::string& str) {
+        static const std::unordered_set<std::string> operators = {
+            "+", "-", "*", "/", "=", "==", "!="
+        };
+        return operators.find(str) != operators.end();
+    }
+
+    static bool isSymbol(const std::string& str) {
+        return str.size() == 1 && !std::isalnum(str[0]);
+    }
+};

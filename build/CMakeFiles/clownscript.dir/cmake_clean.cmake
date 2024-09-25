@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/clownscript.dir/src/Init/main.cpp.o"
   "CMakeFiles/clownscript.dir/src/Init/main.cpp.o.d"
+  "CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.o"
+  "CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.o.d"
   "CMakeFiles/clownscript.dir/src/Lexer/Tokenizer.cpp.o"
   "CMakeFiles/clownscript.dir/src/Lexer/Tokenizer.cpp.o.d"
   "clownscript"

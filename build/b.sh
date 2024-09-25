@@ -1,0 +1,2 @@
+clear && cmake .. && make && ./clownscript
+

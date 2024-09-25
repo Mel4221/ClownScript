@@ -3,6 +3,10 @@
 #include <vector>
 #include <string>
 #include "Token.hpp"
+//#include "Is.hpp"
+//#include "Convert.hpp"
+
+
 using namespace std;
 namespace ClownScript
 {
@@ -12,6 +16,7 @@ namespace ClownScript
         {
             private:string Input; // Reference to a string
             private:int Position;
+            private:int Line;
             private:vector<Token> Tokens; 
             public: vector<Token> Tokenize();
             public: vector<Token> Tokenize(string input);

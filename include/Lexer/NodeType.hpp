@@ -6,10 +6,11 @@ namespace ClownScript
     {
         enum NodeType
         {
-        Function,
-        Parameter,
-        Return, 
-        Call
+            Function,
+            Parameter,
+            Return, 
+            Call,
+            Condition
         };
     }
 }

@@ -1,3 +1,55 @@
 #ifndef Lexer_Node
 #define Lexer_Node
 #endif // Lexer_Node
+
+include
+if
+for
+while
+break
+return
+int
+float
+double
+long 
+void
+object
+try
+catch
+true
+false
+async
+
+In programming languages, keywords can be categorized into several types based on their functionality and usage. Here are some common keyword types:
+
+1. **Control Flow Keywords**: Used to control the execution flow of a program.
+   - Examples: `if`, `else`, `switch`, `case`, `for`, `while`, `do`, `break`, `continue`, `return`.
+
+2. **Data Type Keywords**: Define basic data types or structures.
+   - Examples: `int`, `float`, `double`, `char`, `void`, `struct`, `class`.
+
+3. **Access Modifier Keywords**: Define the visibility of class members.
+   - Examples: `public`, `private`, `protected`.
+
+4. **Storage Class Keywords**: Define the lifetime and visibility of variables.
+   - Examples: `static`, `extern`, `auto`, `register`.
+
+5. **Exception Handling Keywords**: Manage exceptions and errors.
+   - Examples: `try`, `catch`, `throw`, `finally`.
+
+6. **Function/Method Keywords**: Related to function declarations and definitions.
+   - Examples: `function` (in some languages), `inline`, `virtual`, `override`.
+
+7. **Boolean Keywords**: Used for logical operations.
+   - Examples: `true`, `false`.
+
+8. **Namespace Keywords**: Manage namespaces and scopes.
+   - Examples: `namespace`, `using`.
+
+9. **Type Casting Keywords**: Handle type conversions.
+   - Examples: `cast`, `dynamic_cast`, `static_cast` (in C++).
+
+10. **Miscellaneous Keywords**: Cover various functionalities unique to specific languages.
+    - Examples: `new`, `delete`, `sizeof`, `sizeof` (C/C++), `import` (Python), `package` (Java).
+
+Different programming languages may have unique keywords and additional categories, but these types cover the common functionalities found in many languages.

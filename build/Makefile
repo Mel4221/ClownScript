@@ -153,6 +153,30 @@ src/Init/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Init/main.cpp.s
 .PHONY : src/Init/main.cpp.s
 
+src/Lexer/Is.o: src/Lexer/Is.cpp.o
+.PHONY : src/Lexer/Is.o
+
+# target to build an object file
+src/Lexer/Is.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.o
+.PHONY : src/Lexer/Is.cpp.o
+
+src/Lexer/Is.i: src/Lexer/Is.cpp.i
+.PHONY : src/Lexer/Is.i
+
+# target to preprocess a source file
+src/Lexer/Is.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.i
+.PHONY : src/Lexer/Is.cpp.i
+
+src/Lexer/Is.s: src/Lexer/Is.cpp.s
+.PHONY : src/Lexer/Is.s
+
+# target to generate assembly for a file
+src/Lexer/Is.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.s
+.PHONY : src/Lexer/Is.cpp.s
+
 src/Lexer/Tokenizer.o: src/Lexer/Tokenizer.cpp.o
 .PHONY : src/Lexer/Tokenizer.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... src/Init/main.o"
 	@echo "... src/Init/main.i"
 	@echo "... src/Init/main.s"
+	@echo "... src/Lexer/Is.o"
+	@echo "... src/Lexer/Is.i"
+	@echo "... src/Lexer/Is.s"
 	@echo "... src/Lexer/Tokenizer.o"
 	@echo "... src/Lexer/Tokenizer.i"
 	@echo "... src/Lexer/Tokenizer.s"

@@ -118,6 +118,7 @@ CMakeFiles/clownscript.dir/src/Lexer/Tokenizer.cpp.o: \
  /usr/include/c++/12/bits/basic_string.tcc \
  /home/mel/Documents/C++/ClownScript/src/Lexer/../../include/Lexer/Token.hpp \
  /home/mel/Documents/C++/ClownScript/src/Lexer/../../include/Lexer/TokenType.hpp \
+ /home/mel/Documents/C++/ClownScript/src/Lexer/../../include/Lexer/Is.hpp \
  /usr/include/c++/12/iostream /usr/include/c++/12/ostream \
  /usr/include/c++/12/ios /usr/include/c++/12/exception \
  /usr/include/c++/12/bits/exception_ptr.h \
@@ -154,4 +155,16 @@ CMakeFiles/clownscript.dir/src/Lexer/Tokenizer.cpp.o: \
  /usr/include/c++/12/bits/locale_facets.tcc \
  /usr/include/c++/12/bits/basic_ios.tcc \
  /usr/include/c++/12/bits/ostream.tcc /usr/include/c++/12/istream \
- /usr/include/c++/12/bits/istream.tcc
+ /usr/include/c++/12/bits/istream.tcc /usr/include/c++/12/unordered_set \
+ /usr/include/c++/12/ext/aligned_buffer.h \
+ /usr/include/c++/12/bits/hashtable.h \
+ /usr/include/c++/12/bits/hashtable_policy.h /usr/include/c++/12/tuple \
+ /usr/include/c++/12/bits/uses_allocator.h \
+ /usr/include/c++/12/bits/enable_special_members.h \
+ /usr/include/c++/12/bits/unordered_set.h \
+ /usr/include/c++/12/bits/erase_if.h /usr/include/c++/12/algorithm \
+ /usr/include/c++/12/bits/stl_algo.h \
+ /usr/include/c++/12/bits/algorithmfwd.h \
+ /usr/include/c++/12/bits/stl_heap.h \
+ /usr/include/c++/12/bits/stl_tempbuf.h \
+ /usr/include/c++/12/bits/uniform_int_dist.h

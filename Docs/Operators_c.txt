@@ -1,0 +1,74 @@
+Sure! Here’s a text list of all the operators in C:
+
+### C Operators
+
+1. **Arithmetic Operators**
+   - `+`
+   - `-`
+   - `*`
+   - `/`
+   - `%`
+
+2. **Relational Operators**
+   - `==`
+   - `!=`
+   - `>`
+   - `<`
+   - `>=`
+   - `<=`
+
+3. **Logical Operators**
+   - `&&`
+   - `||`
+   - `!`
+
+4. **Bitwise Operators**
+   - `&`
+   - `|`
+   - `^`
+   - `~`
+   - `<<`
+   - `>>`
+
+5. **Assignment Operators**
+   - `=`
+   - `+=`
+   - `-=`
+   - `*=`
+   - `/=`
+   - `%=`
+   - `&=`
+   - `|=`
+   - `^=`
+   - `<<=`
+   - `>>=`
+
+6. **Increment and Decrement Operators**
+   - `++`
+   - `--`
+
+7. **Conditional (Ternary) Operator**
+   - `? :`
+
+8. **Sizeof Operator**
+   - `sizeof`
+
+9. **Pointer Operators**
+   - `*`
+   - `&`
+
+10. **Member Access Operators**
+    - `.`
+    - `->`
+
+11. **Comma Operator**
+    - `,`
+
+12. **Type Casting Operators**
+    - `(type)`
+
+13. **Other Operators**
+    - `__alignof__`
+    - `__attribute__`
+
+Feel free to ask if you need further information or examples for any specific operator!

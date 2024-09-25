@@ -1,17 +1,19 @@
 #include "../../include/Lexer/Tokenizer.hpp"
 #include <iostream>
+#include <string>
 
+using namespace std; 
 namespace ClownScript
 {
     namespace Lexer
     {
         // Default constructor
-        Tokenizer::Tokenizer() : Input(""), Position(0), Tokens() { 
+        Tokenizer::Tokenizer() : Input(""), Position(0), Tokens(),Line(0){ 
             // Optionally initialize Input to an empty string
         }
 
         // Constructor with input
-        Tokenizer::Tokenizer(string input) : Input(input), Position(0), Tokens() {  
+        Tokenizer::Tokenizer(string input) : Input(input), Position(0), Tokens(),Line(0) {  
         }
 
         // Destructor
@@ -20,20 +22,48 @@ namespace ClownScript
             // No need to delete since Input is not dynamically allocated
            // delete Tokens;
         }
+
+        /* 
+                int start = _position;
+        while (_position < _input.Length && char.IsLetterOrDigit(_input[_position]) ||
+                _input[_position] == '_' ) {
+            _position++;
+         //   if(_position == _input.Length)break;
+
+        }
+        string value = _input.Substring(start, _position - start);
+        return new Token(TokenType.Identifier, value);
+        */
+    
         Token Tokenizer::HandleKeywordOrIdentyfier()
         {
-            Token token();
+            Token token; 
+            int start = Position;
+        while(Position < Input.length() && 
+                isalpha(Input[Position])||
+                Input[Position] == '_'
+                ){
+                    Position++;//Keep Moving Foward
+                } 
+                string value = Input.substr(start, Position - start);
 
-
-            return token; 
+                token.Type = Token::ParseToType(value); 
+                token.LineNumber = Position;
+                token.Value = value; 
+                return token; 
+            
+            //token.Type = TokenType.Identifier;
+            return  Token(); 
         }
+
         // Tokenize method without input
         vector<Token> Tokenizer::Tokenize() 
         {
-            while(Position < Input.length)
+            while(Position < Input.length())
             {
-
-                    if (std::isalpha(current) || current == '_') 
+                    char current = Input[Position]; 
+                    if(!isalpha(current))
+                    if (isalpha(current) || current == '_') 
                     {
                         Tokens.push_back(HandleKeywordOrIdentyfier());
                     }
