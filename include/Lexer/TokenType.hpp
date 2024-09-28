@@ -6,7 +6,6 @@ namespace ClownScript
     {
         enum TokenType
         {
-            Keyword,
             Identifier,
             StringLiteral,
             Operator,
@@ -27,7 +26,14 @@ namespace ClownScript
             Parameter,     // For parameters in function definitions
             Call,          // For function calls
             Path,// For paths in includes
+            Object,
+            Property,
+            Generic,
+            Array,
+            For,
+            ForEach,
             Unknown
+            
         };
     
     }

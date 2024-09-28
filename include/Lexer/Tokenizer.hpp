@@ -15,7 +15,7 @@ namespace ClownScript
         class Tokenizer
         {
             private:string Input; // Reference to a string
-            private:int Position;
+            private:int Column;
             private:int Line;
             private:vector<Token> Tokens; 
             public: vector<Token> Tokenize();

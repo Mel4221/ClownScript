@@ -5,14 +5,14 @@ include "/usr/update dtf/str_dnf/a b c d/lastest/test.clown"
 
 
 
-"
+/*
 There are 2 styles that i have in mind 
 one that looks more like a functional language
 and the other one more similar to bash
-"
+*/
 
-@person.user_name = mel
-@person.user_email = mel@gmail.com 
+@person.user_name = "mel"
+@person.user_email = "mel@gmail.com" 
 
 
 # Sytle 1
@@ -33,11 +33,34 @@ please try to check your internet connection or the server
     }"
 
 int sum -> a,b
-
-x = a + b
+    int x = a + b
 return x
 
+string input = "12345"
+int number = input.to_int
 
+@animal
+[
+    name = ""
+    lastName = ""
+    int age = 0
+    speak -> 
+        print "animal makes a sound"
+    return void
+    
+    @animal -> void
+]
+
+@dog -> @animal
+[
+    bark -> 
+        speak
+        print "Dog Barcking"
+        return void
+
+    @dog -> void
+        
+]
 
 print sum 2 4
 
@@ -59,19 +82,62 @@ update_sys ->
     if  @result.number == 0 && 
         @result.errors == 0 -> 
         clear_temp $update
+        end        
 
     if  @result.number == 0 && 
         @result.errors == 0 -> 
         clear_temp $update
-
-return void      
-
+        end
 
 
-async -> load_paths
+return void   
 
-add @list ->
 
-return a*b*c
+
+async -> update_sys
+
+sum -> @list
+    var total
+    foreach item in @list ->
+        total = total + item
+return total
 
 clear_temp path -> rm -r $path
+
+
+print sum [1,1,1,1,1,1,1,1,1,1]
+
+
+@car
+[
+    model = ""
+    int made = 0
+    id = ""
+    @car -> 
+    # constructor
+    int length = 16
+    id = random_chars length
+]
+
+@parcking_lot<type>
+[
+   type @cars = []
+   
+
+   @parcking_lot ->
+    # constructor
+]
+ 
+
+@parcking_lot<@car> = []
+
+
+@fruits = ["Orange","Blueberry","Apple","Banana"]
+
+print @fruits.length
+
+@fruits.add "Pinapple"
+
+print @fruits.length
+
+@fruits.clear

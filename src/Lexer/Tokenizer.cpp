@@ -8,12 +8,12 @@ namespace ClownScript
     namespace Lexer
     {
         // Default constructor
-        Tokenizer::Tokenizer() : Input(""), Position(0), Tokens(),Line(0){ 
+        Tokenizer::Tokenizer() : Input(""), Column(0), Tokens(),Line(0){ 
             // Optionally initialize Input to an empty string
         }
 
         // Constructor with input
-        Tokenizer::Tokenizer(string input) : Input(input), Position(0), Tokens(),Line(0) {  
+        Tokenizer::Tokenizer(string input) : Input(input), Column(0), Tokens(),Line(0) {  
         }
 
         // Destructor
@@ -38,18 +38,19 @@ namespace ClownScript
         Token Tokenizer::HandleKeywordOrIdentyfier()
         {
             Token token; 
-            int start = Position;
-        while(Position < Input.length() && 
-                isalpha(Input[Position])||
-                Input[Position] == '_'
+            int start = Column;
+            while(Column < Input.length() && 
+                isalpha(Input[Column])||
+                Input[Column] == '_'
                 ){
-                    Position++;//Keep Moving Foward
+                   Column++;//Keep Moving Foward
                 } 
-                string value = Input.substr(start, Position - start);
+                string value = Input.substr(start,Column - start);
 
                 token.Type = Token::ParseToType(value); 
-                token.LineNumber = Position;
-                token.Value = value; 
+                token.Line = Line;
+                token.Column = Column;
+                token.Value = value;  
                 return token; 
             
             //token.Type = TokenType.Identifier;
@@ -59,16 +60,19 @@ namespace ClownScript
         // Tokenize method without input
         vector<Token> Tokenizer::Tokenize() 
         {
-            while(Position < Input.length())
+            while(Column < Input.length())
             {
-                    char current = Input[Position]; 
-                    if(!isalpha(current))
+                    char current = Input[Column]; 
+                    if(current == '\n')
+                    {
+                        Line++; 
+                    }
                     if (isalpha(current) || current == '_') 
                     {
                         Tokens.push_back(HandleKeywordOrIdentyfier());
                     }
 
-                    Position++;
+                   Column++;
             }
             
 
@@ -80,7 +84,7 @@ namespace ClownScript
         // Tokenize method with input
         vector<Token> Tokenizer::Tokenize(string input) {
             Input = input; // Set the current input
-            Position = 0;  // Reset position for new tokenization
+            Column = 0;  // Reset the Column for new tokenization
             return Tokenize(); // Call the no-argument Tokenize
         }
     }

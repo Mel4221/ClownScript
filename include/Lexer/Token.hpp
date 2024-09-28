@@ -11,8 +11,8 @@ namespace ClownScript
         class Token
         {
             public:TokenType Type;
-            public:int LineNumber;
-            public:int ColumnNumber;
+            public:int Line;
+            public:int Column;
             public:string Value;
             public: static TokenType ParseToType(const std::string& value) 
 {
@@ -63,7 +63,7 @@ namespace ClownScript
             std::string ToType() const
             {
                 switch (Type) {
-                    case Keyword:       return "keyword";
+                    //case Keyword:       return "keyword";
                     case Identifier:    return "identifier";
                     case StringLiteral: return "stringliteral";
                     case Operator:      return "operator";
@@ -84,6 +84,12 @@ namespace ClownScript
                     case Parameter:    return "parameter";
                     case Call:         return "call";
                     case Path:         return "path";
+                    case Generic:      return "generic":
+                    case Object:       return "object";
+                    case Property:     return "property";
+                    case Array:        return "array";
+                    case For:          return "for";
+                    case ForEach:      return "foreach";
                     case Unknown:      // Fallthrough case for default
                     default:           return "unknown";
                 }
@@ -96,7 +102,7 @@ namespace ClownScript
             }
 
             public: string ToString()const {
-             return  ToType() +" : "+ Value;//$"{ToType()}: {Value}";
+             return  ToType() +" : "+ Value +" -> Line: "+to_string(Line+1) +" Column: "+to_string(Column+1);//$"{ToType()}: {Value}";
             }
             public:Token()
             {
