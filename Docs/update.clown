@@ -1,8 +1,8 @@
-using scripts
-namespace updater
+include "scripts"
 include "http://clownapps.com/clownshell/scripts.clown"
 include "/usr/update dtf/str_dnf/a b c d/lastest/test.clown"
 
+namespace "updater"
 
 
 /*
@@ -14,25 +14,28 @@ and the other one more similar to bash
 @person.user_name = "mel"
 @person.user_email = "mel@gmail.com" 
 
+$update_out = $"{shell_temp/update.clown}" 
 
 # Sytle 1
 update ->
-    wget "http://www.github.com/user/updates.clown" -o $"{shell_temp/update.clown}"
-    shell_update 
+    wget "http://www.github.com/user/updates.clown" -o $update_out
+    include 
 return void 
 
 try update -> catch @error -> print $"{@error.message
 there has been an error while trying to process the update
 please try to check your internet connection or the server}"
 
-try update -> 
+try update() ->
 catch @error -> 
     print $"{@error.message
     there has been an error while trying to process the update
 please try to check your internet connection or the server
     }"
+    return @error
 
-int sum -> a,b
+
+int sum -> int a,int b
     int x = a + b
 return x
 
@@ -47,7 +50,7 @@ int number = input.to_int
     speak -> 
         print "animal makes a sound"
     return void
-    
+
     @animal -> void
 ]
 
@@ -79,7 +82,7 @@ update_sys ->
     
     @result = shell self_check
 
-    if  @result.number == 0 && 
+    if  @result.number == 0 &&
         @result.errors == 0 -> 
         clear_temp $update
         end        
@@ -99,7 +102,7 @@ async -> update_sys
 sum -> @list
     var total
     foreach item in @list ->
-        total = total + item
+        total += item
 return total
 
 clear_temp path -> rm -r $path
@@ -141,3 +144,36 @@ print @fruits.length
 print @fruits.length
 
 @fruits.clear
+
+
+/*
+    to me this will be 
+    one of the greatest 
+    feature for the language: 
+    pointer manipulation.
+*/
+
+@car* = [] 
+public @house 
+[
+    @garage = [] 
+    @add -> @car*
+        @garage.add(@car*)
+        return     
+]
+
+@house.add @car
+
+@action -> print "i am an action"
+
+@action2 -> param
+    print $"{i am action 2 , with $param}"
+    return
+
+
+run_actions -> @action,@action2,param
+    @action.run()
+    @action2.run(param)
+    return
+
+run_actions(@action,@action2,@action2)
