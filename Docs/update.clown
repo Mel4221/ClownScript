@@ -1,6 +1,8 @@
 include "scripts"
 include "https://raw.githubusercontent.com/Mel4221/ClownScript/refs/heads/main/Docs/print2.clown"
-include "notes.txt" as @note
+include "notes.txt"
+
+//include "notes.txt" as @note
 
 
 
@@ -12,6 +14,7 @@ string text = "some text right there"
 /*
     this is a multy line comment 
 */
+
 /*
 There are 2 styles that i have in mind 
 one that looks more like a functional language
