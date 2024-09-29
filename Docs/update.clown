@@ -1,6 +1,6 @@
 include "scripts"
-include "http://clownapps.com/clownshell/scripts.clown"
-include "/usr/update dtf/str_dnf/a b c d/lastest/test.clown"
+include "https://raw.githubusercontent.com/Mel4221/ClownScript/refs/heads/main/Docs/print2.clown"
+include "notes.txt" as @note
 
 
 
