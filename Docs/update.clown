@@ -2,9 +2,16 @@ include "scripts"
 include "http://clownapps.com/clownshell/scripts.clown"
 include "/usr/update dtf/str_dnf/a b c d/lastest/test.clown"
 
+
+
 namespace "updater"
 
-
+string text = "some text right there"
+# and this is a compiler flag or 
+// this is a single line comment 
+/*
+    this is a multy line comment 
+*/
 /*
 There are 2 styles that i have in mind 
 one that looks more like a functional language
@@ -15,11 +22,10 @@ and the other one more similar to bash
 @person.user_email = "mel@gmail.com" 
 
 $update_out = $"{shell_temp/update.clown}" 
-
-# Sytle 1
+# compiler flags will be added with the pound simbol 
+// Sytle 1
 update ->
     wget "http://www.github.com/user/updates.clown" -o $update_out
-    include 
 return void 
 
 try update -> catch @error -> print $"{@error.message
@@ -67,7 +73,7 @@ int number = input.to_int
 
 print sum 2 4
 
-update_sys ->
+async update_sys ->
 
     $update = $"{$temp/update/sys.update}"
 
@@ -92,12 +98,11 @@ update_sys ->
         clear_temp $update
         end
 
+return void
+# either return has to be empty or simply a type   
 
-return void   
 
-
-
-async -> update_sys
+await(update_sys)
 
 sum -> @list
     var total
@@ -177,3 +182,7 @@ run_actions -> @action,@action2,param
     return
 
 run_actions(@action,@action2,@action2)
+
+public main -> @args
+    if @args[0] == "update"
+        update()

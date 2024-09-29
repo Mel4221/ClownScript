@@ -1,0 +1,43 @@
+DWARF (Debugging With Attributed Record Formats) is a standardized debugging data format used by various compilers and debuggers, including GDB (GNU Debugger). It provides detailed information about the program's structure, which helps debuggers understand how to interpret the compiled binary.
+
+### Key Features of DWARF
+
+1. **Symbol Information**:
+   - DWARF contains data about variables, functions, classes, and types, allowing debuggers to map the binary code back to the source code.
+
+2. **Line Number Information**:
+   - It provides a mapping between the source code lines and the corresponding machine instructions. This allows debuggers to show the current line being executed.
+
+3. **Type Information**:
+   - Includes details about data types, including their sizes and layouts, which helps debuggers interpret the memory correctly.
+
+4. **Scope Information**:
+   - DWARF provides information about variable scopes, helping to determine which variables are accessible at any given point in the program.
+
+5. **Stack Information**:
+   - It describes the call stack, including function arguments and local variables, enabling debuggers to present the stack trace accurately.
+
+6. **Cross-Platform Support**:
+   - DWARF is used across different operating systems and architectures, making it a widely accepted standard for debugging information.
+
+### Usage
+
+When you compile a program with debugging information (often using a flag like `-g`), the compiler generates DWARF data alongside the compiled binary. This allows tools like GDB to provide a more informative debugging experience, including:
+
+- Setting breakpoints
+- Inspecting variables
+- Navigating through source code
+- Displaying call stacks
+
+### Example of DWARF Information
+
+When you compile a simple C or C++ program with debugging information, the DWARF data might include entries like:
+
+- The source file name
+- Line numbers mapping to machine instructions
+- Definitions of functions and their parameters
+- Type definitions for structures and classes
+
+### Conclusion
+
+DWARF plays a crucial role in modern debugging, making it easier for developers to troubleshoot and understand their programs. If you have more specific questions about DWARF or how to implement it in your language, feel free to ask!

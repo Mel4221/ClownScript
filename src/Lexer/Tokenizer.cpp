@@ -36,10 +36,36 @@ namespace ClownScript
         */
         Token Tokenizer::HandleStringLiteral()
         {
-            Token token; 
+            Token token;
+            bool isPair = false; 
+            int start = Column;
+            int line = Line; 
+            while(Column < Input.length())
+            {
+                Current = Input[Column];
+                if(Column+1 < Input.length())
+                {
+                    if(Current == '"' && 
+                    Input[Column+1] == '\n' &&
+                    Input[Column-1] != '\\'
+                    )
+                    {
+                        break;
+                    }
+                }
 
+                Column++;
+            }
+            token.Type = TokenType::StringLiteral;
+            token.Value = Input.substr(start,Column);
+            token.Column = start; 
+            token.Line = line; 
             return token; 
         }
+
+        /* 
+            sort of tryes to ignored single line  comments
+        */
         void Tokenizer::HandleSingleLineComments()
         {
             while(Column < Input.length())
@@ -53,15 +79,30 @@ namespace ClownScript
             }
 
         }
+        /* 
+            sort of tryes to ignored single 
+            multy lines comments
+        */
         void Tokenizer::HandleComments()
         {
-            bool isOpen = true; 
+            bool isSingleLine = false; 
+            int start = Column; 
             while(Column < Input.length())
             {   
                 Current = Input[Column]; 
                 if(Column+1 < Input.length())
                 {   
-                   
+
+                    if(Current == '/' && Input[Column+1] == '/')
+                    {
+                        isSingleLine = true; 
+                    }   
+                    if(isSingleLine && Current == '\n')
+                    {
+                        cout << "Comment..: \n"<<Input.substr(start,Column) <<endl; 
+                        exit(0);
+                        break;
+                    }
                     if(Current == '*' && Input[Column+1] == '/')
                     {
                         break;
@@ -71,18 +112,25 @@ namespace ClownScript
                         break;
                     }
                 }
+                //cout << "Comment..: \n"<<Input.substr(start,Column) <<endl; 
                 Column++;
             }
         }
+        /*
+            Handles the keywords or identifier
+        */
         Token Tokenizer::HandleKeywordOrIdentyfier()
         {
             Token token; 
             int start = Column;
+
             while(Column < Input.length() && 
                 isalpha(Input[Column])||
                 Input[Column] == '_'
                 ){
-                   Column++;//Keep Moving Foward
+                
+                    //cout << "HandleKeywordOrIdentyfier..: " << Current << endl;
+                    Column++;//Keep Moving Foward
                 } 
                 string value = Input.substr(start,Column - start);
 
@@ -96,33 +144,37 @@ namespace ClownScript
             return  Token(); 
         }
 
-        // Tokenize method without input
+
+        /*
+            This method is the tokinizer which would
+            return all the tokens created, to find
+            all the types of tokens created visist the
+            /include/Lexer/TokenType.hpp
+        */
         vector<Token> Tokenizer::Tokenize() 
         {
             while(Column < Input.length())
             {
                     Current = Input[Column]; 
+                    if(!isalpha(Current) && Current == '"' )
+                    {
+                      Tokens.push_back(HandleStringLiteral());
+                    }
+                    //cout << "Tokenize..: " << Current << endl;
                     if(Current == '\n')
                     {
                         Line++; 
-                    }
-                    if (isalpha(Current) || Current == '_') 
+                    }if (isalpha(Current) || Current == '_') 
                     {
-                        Tokens.push_back(HandleKeywordOrIdentyfier());
-                    }if(!isalpha(Current) && Current == '/' || Current=='#')
+                       // Tokens.push_back(HandleKeywordOrIdentyfier());
+                    }if(!isalpha(Current) && Current == '/')
                     {
-                        if(Current == '#')
-                        {
-                            HandleSingleLineComments();
-                        }
+                    
                         if(Column+1 < Input.length())
                         {
-                            cout << "[OK]" <<endl; 
-
                             HandleComments();
                         }
                     }
-
                    Column++;
             }
             

@@ -51,7 +51,7 @@ namespace ClownScript
             if (value == "catch") {
                 return TokenType::Catch;
             } 
-
+            
             if (value == "async") {
                 return TokenType::Async;
             } 
@@ -109,6 +109,7 @@ namespace ClownScript
             case Float:         return "float";
             case Long:          return "long";
             case Char:          return "char";
+            case Byte:          return "byte"; 
             case Unknown:       return "unknown"; // Fallthrough case for unknown token
             default:           return "unknown";   // Default case for any unhandled tokens
         }

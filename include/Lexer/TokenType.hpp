@@ -20,7 +20,8 @@ namespace ClownScript
             Try,           // For try keyword
             Catch,         // For catch keyword
             Return,        // For return statements
-            Async,         // For async keyword
+            Async,
+            Await,         // For async keyword
             Comment,   // For comments
             Parameter,     // For parameters in function definitions
             Call,          // For function calls
@@ -29,6 +30,7 @@ namespace ClownScript
             Property,
             Generic,
             Array,
+            Byte,
             For,
             ForEach,
             Int,

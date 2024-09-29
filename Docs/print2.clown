@@ -1,0 +1,3 @@
+
+print2 -> @obj
+    print(@obj)

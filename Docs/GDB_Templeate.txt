@@ -1,0 +1,135 @@
+Creating GDB documentation for your custom language requires outlining how to use GDB for debugging programs written in that language. Below is a sample documentation tailored for the provided language:
+
+---
+
+# GDB Documentation for Clown Language
+
+This documentation explains how to use GDB (GNU Debugger) to debug programs written in Clown Language, a custom scripting language designed for simplicity and functionality.
+
+## Prerequisites
+
+- **GDB**: Ensure you have GDB installed. You can install it via your package manager.
+- **Clown Language Compiler**: Compile your Clown scripts with debug information enabled. Use the `-g` flag when compiling to include necessary debug data.
+
+## Compiling with Debug Information
+
+When compiling your Clown scripts, use the following command to generate debug information:
+
+```bash
+clownc -g your_script.clown -o your_program
+```
+
+## Running GDB
+
+To start debugging with GDB, use the following command:
+
+```bash
+gdb ./your_program
+```
+
+### Basic GDB Commands
+
+Once inside GDB, you can use the following commands to navigate and debug your program:
+
+- **Run the Program**:
+  ```gdb
+  run
+  ```
+
+- **Set Breakpoints**:
+  You can set breakpoints at specific lines or function calls:
+  ```gdb
+  break <line_number>
+  break <function_name>
+  ```
+
+- **Continue Execution**:
+  After hitting a breakpoint, continue execution with:
+  ```gdb
+  continue
+  ```
+
+- **Step Through Code**:
+  To step through your code line by line, use:
+  ```gdb
+  step
+  ```
+
+- **Inspect Variables**:
+  Check the value of variables using:
+  ```gdb
+  print <variable_name>
+  ```
+
+- **View Call Stack**:
+  To see the current call stack, use:
+  ```gdb
+  backtrace
+  ```
+
+- **Quit GDB**:
+  To exit GDB, simply type:
+  ```gdb
+  quit
+  ```
+
+## Debugging Clown Language Constructs
+
+### Working with Variables
+
+You can inspect and modify variables defined in your Clown scripts. For example, if you have a variable `text`, you can view its content:
+
+```gdb
+print text
+```
+
+### Debugging Functions
+
+When debugging functions like `update` or `sum`, set breakpoints within the function definitions to check how they execute:
+
+```gdb
+break update
+```
+
+### Exception Handling
+
+In Clown Language, you may use `try` and `catch` constructs. To observe error handling in action, set breakpoints within your `catch` blocks:
+
+```gdb
+break <line_number_of_catch>
+```
+
+### Working with Objects
+
+If you have defined objects (like `@car` or `@house`), you can inspect their attributes:
+
+```gdb
+print @car.model
+print @house.@garage
+```
+
+### Using GDB Scripts
+
+To automate your debugging sessions, consider writing GDB scripts. You can create a script named `gdb_commands.gdb`:
+
+```gdb
+break main
+run
+backtrace
+```
+
+Run this script with:
+
+```bash
+gdb -x gdb_commands.gdb ./your_program
+```
+
+## Conclusion
+
+By following this documentation, you should be able to effectively debug programs written in the Clown Language using GDB. Remember to compile your scripts with debug information and familiarize yourself with basic GDB commands to navigate your code efficiently.
+
+For more advanced features and commands, refer to the [GDB Manual](https://sourceware.org/gdb/onlinedocs/gdb/).
+
+---
+
+Feel free to customize this documentation based on additional features of your language or specific use cases! If you need further assistance or details, let me know!

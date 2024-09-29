@@ -1,0 +1,18 @@
+Yes, I noticed the generics in your language style! They appear in the following line:
+
+```plaintext
+@parcking_lot<type>
+```
+
+This indicates that `@parcking_lot` can accept a type parameter, which is a common pattern in languages with generics. It allows you to define data structures or functions that can operate on various data types while maintaining type safety.
+
+### Considerations for Generics
+1. **Syntax**: The `<type>` notation clearly indicates that `parcking_lot` can be parameterized with different types. You might want to consider how you'll handle multiple type parameters or constraints in the future.
+
+2. **Tokenization**: When tokenizing, you should recognize the `<type>` syntax as part of the generic type declaration. This might require a separate token type for generic types.
+
+3. **Type Inference**: Consider how type inference will work when using generics. Will the compiler be able to infer types from context, or will they need to be explicitly defined?
+
+4. **Usage**: Ensure that generics can be used consistently across your language, including in function parameters, return types, and data structures.
+
+If you have specific questions about how to implement generics or other related features, let me know!
