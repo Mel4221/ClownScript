@@ -1,0 +1,40 @@
+Your lexer’s switch statement is quite comprehensive, and it looks like you're doing a good job of categorizing various elements of your language. Here’s a breakdown of your tokens and some guidance on whether they belong in the lexer or the parser:
+
+### Tokens in the Lexer
+The lexer is responsible for breaking the raw input into tokens. The following tokens are appropriately placed in the lexer:
+
+1. **Identifiers**: Names for variables or functions.
+2. **StringLiteral**: Text enclosed in quotes.
+3. **Operator**: Symbols for operations (e.g., `+`, `-`).
+4. **Symbol**: Punctuation or special characters (e.g., `;`, `{`).
+5. **Whitespace**: Spaces, tabs, and newlines (often ignored).
+6. **Arrow**: Specific symbol (e.g., `->`).
+7. **Function, Namespace, Using, Include**: Keywords that define structure in the code.
+8. **Assignment**: The `=` operator.
+9. **Conditional**: Keywords for control flow (e.g., `if`, `else`).
+10. **Try, Catch, Return, Async**: Keywords related to error handling and async operations.
+11. **Comment**: Single-line or multi-line comments.
+12. **Parameter**: Tokens representing function parameters.
+13. **Call**: Invocations of functions or methods.
+14. **Path**: File paths or module paths in includes.
+15. **Generic**: For generic types (e.g., `List<T>`).
+16. **Object, Property, Array**: Related to object and array definitions.
+17. **For, ForEach**: Loop constructs.
+
+### Tokens for the Parser
+Some tokens may need to be handled at the parser level rather than the lexer. Generally, the lexer should focus on the syntax of the language, while the parser interprets the structure and relationships. 
+
+- **Unknown**: Handling unknown tokens is often done in the lexer but can also be managed in the parser for better error reporting.
+
+### Summary
+Your current setup seems mostly appropriate for the lexer, as it focuses on recognizing tokens based on the syntax. 
+
+- If a token represents a structural concept (like `if`, `while`, `function`), it's usually appropriate for the lexer.
+- If you have tokens that require more context (like how they interact with other tokens), those aspects are typically handled in the parser.
+
+### Suggestions
+1. **Review Token Purpose**: Ensure each token has a clear purpose for the lexer, primarily focused on recognizing the text.
+2. **Simplify if Necessary**: If you find too many tokens in the lexer that can be derived from context later (like parsing function arguments), consider reducing complexity.
+3. **Separate Concerns**: Keep the lexer focused on token generation and the parser focused on understanding the relationships between those tokens.
+
+Overall, your approach looks solid, and as you develop, you'll get a clearer sense of how to best structure these components!

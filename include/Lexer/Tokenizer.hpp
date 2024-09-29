@@ -15,11 +15,15 @@ namespace ClownScript
         class Tokenizer
         {
             private:string Input; // Reference to a string
+            private:char Current; 
             private:int Column;
             private:int Line;
             private:vector<Token> Tokens; 
             public: vector<Token> Tokenize();
             public: vector<Token> Tokenize(string input);
+            public: void HandleSingleLineComments();
+            public: void HandleComments();
+            public: Token HandleStringLiteral(); 
             public: Token HandleKeywordOrIdentyfier();
             public: Tokenizer();
             public: Tokenizer(string input);

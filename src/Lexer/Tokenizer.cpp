@@ -8,12 +8,12 @@ namespace ClownScript
     namespace Lexer
     {
         // Default constructor
-        Tokenizer::Tokenizer() : Input(""), Column(0), Tokens(),Line(0){ 
+        Tokenizer::Tokenizer() : Input(""), Column(0), Tokens(),Line(0),Current(' '){ 
             // Optionally initialize Input to an empty string
         }
 
         // Constructor with input
-        Tokenizer::Tokenizer(string input) : Input(input), Column(0), Tokens(),Line(0) {  
+        Tokenizer::Tokenizer(string input) : Input(input), Column(0), Tokens(),Line(0),Current(' ') {  
         }
 
         // Destructor
@@ -34,7 +34,46 @@ namespace ClownScript
         string value = _input.Substring(start, _position - start);
         return new Token(TokenType.Identifier, value);
         */
-    
+        Token Tokenizer::HandleStringLiteral()
+        {
+            Token token; 
+
+            return token; 
+        }
+        void Tokenizer::HandleSingleLineComments()
+        {
+            while(Column < Input.length())
+            {
+                Current = Input[Column]; 
+                if(Current == '\n')
+                {
+                    break;
+                }
+                Column++; 
+            }
+
+        }
+        void Tokenizer::HandleComments()
+        {
+            bool isOpen = true; 
+            while(Column < Input.length())
+            {   
+                Current = Input[Column]; 
+                if(Column+1 < Input.length())
+                {   
+                   
+                    if(Current == '*' && Input[Column+1] == '/')
+                    {
+                        break;
+                    }
+                    if(Current == '/' && !Input[Column+1] == '*' )
+                    {
+                        break;
+                    }
+                }
+                Column++;
+            }
+        }
         Token Tokenizer::HandleKeywordOrIdentyfier()
         {
             Token token; 
@@ -62,14 +101,26 @@ namespace ClownScript
         {
             while(Column < Input.length())
             {
-                    char current = Input[Column]; 
-                    if(current == '\n')
+                    Current = Input[Column]; 
+                    if(Current == '\n')
                     {
                         Line++; 
                     }
-                    if (isalpha(current) || current == '_') 
+                    if (isalpha(Current) || Current == '_') 
                     {
                         Tokens.push_back(HandleKeywordOrIdentyfier());
+                    }if(!isalpha(Current) && Current == '/' || Current=='#')
+                    {
+                        if(Current == '#')
+                        {
+                            HandleSingleLineComments();
+                        }
+                        if(Column+1 < Input.length())
+                        {
+                            cout << "[OK]" <<endl; 
+
+                            HandleComments();
+                        }
                     }
 
                    Column++;

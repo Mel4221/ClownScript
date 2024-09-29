@@ -7,7 +7,6 @@ namespace ClownScript
         enum TokenType
         {
             Identifier,
-            StringLiteral,
             Operator,
             Symbol,
             Whitespace,
@@ -32,6 +31,12 @@ namespace ClownScript
             Array,
             For,
             ForEach,
+            Int,
+            Double,
+            Float,
+            Long,
+            StringLiteral,
+            Char,
             Unknown
             
         };
