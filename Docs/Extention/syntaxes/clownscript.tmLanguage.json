@@ -1,0 +1,81 @@
+{
+    "scopeName": "source.clownscript",
+    "patterns": [
+        {
+            "name": "comment.line.double-slash.clownscript",
+            "begin": "//",
+            "end": "$"
+        },
+        {
+            "name": "comment.block.clownscript",
+            "begin": "/\\*",
+            "end": "\\*/"
+        },
+        {
+            "name": "keyword.control.clownscript",
+            "match": "\\b(namespace|return|try|catch|async|await|if|foreach|for|include|var)\\b"
+        },
+        {
+            "name": "keyword.operator.clownscript",
+            "match": "\\b(update|print|wget|clear_temp|sum|add)\\b"
+        },
+        {
+            "name": "keyword.operator.arrow.clownscript",
+            "match": "\\s*->\\s*"
+        },
+        {
+            "name": "string.quoted.double.clownscript",
+            "begin": "\"",
+            "end": "\""
+        },
+        {
+            "name": "string.interpolated.clownscript",
+            "begin": "\\$\"",
+            "end": "\"",
+            "patterns": [
+                {
+                    "name": "variable.parameter.clownscript",
+                    "match": "\\$[a-zA-Z_][a-zA-Z0-9_]*"
+                }
+            ]
+        },
+        {
+            "name": "variable.parameter.clownscript",
+            "match": "\\$[a-zA-Z_][a-zA-Z0-9_]*"
+        },
+        {
+            "name": "variable.other.clownscript",
+            "match": "@[a-zA-Z_][a-zA-Z0-9_]*"
+        },
+        {
+            "name": "variable.property.clownscript",
+            "match": "@[a-zA-Z_][a-zA-Z0-9_]*\\.[a-zA-Z_][a-zA-Z0-9_]*"
+        },
+        {
+            "name": "constant.numeric.clownscript",
+            "match": "\\b\\d+\\b"
+        },
+        {
+            "name": "entity.other.clownscript",
+            "match": "\\b(string|int|void|double|float|char|byte|array|object|list|map|set|bytearray)\\b"
+        },
+        {
+            "name": "entity.generic.clownscript",
+            "match": "\\b<([a-zA-Z_][a-zA-Z0-9_]*|@\\w+)>\\b"
+        },
+        {
+            "name": "punctuation.separator.clownscript",
+            "match": "[=\\-\\+\\*\\/\\&\\|\\!\\?<>:]"
+        },
+        {
+            "name": "entity.function.clownscript",
+            "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\s*->"
+        },
+        {
+            "name": "warning.compiler.clownscript",
+            "match": "#.*$"
+        }
+    ],
+    "repository": {},
+    "scopeName": "source.clownscript"
+}

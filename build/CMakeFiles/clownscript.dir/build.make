@@ -83,10 +83,66 @@ CMakeFiles/clownscript.dir/src/Init/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clownscript.dir/src/Init/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mel/Documents/C++/ClownScript/src/Init/main.cpp -o CMakeFiles/clownscript.dir/src/Init/main.cpp.s
 
+CMakeFiles/clownscript.dir/src/Lexer/HandleComments.cpp.o: CMakeFiles/clownscript.dir/flags.make
+CMakeFiles/clownscript.dir/src/Lexer/HandleComments.cpp.o: /home/mel/Documents/C++/ClownScript/src/Lexer/HandleComments.cpp
+CMakeFiles/clownscript.dir/src/Lexer/HandleComments.cpp.o: CMakeFiles/clownscript.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mel/Documents/C++/ClownScript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/clownscript.dir/src/Lexer/HandleComments.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clownscript.dir/src/Lexer/HandleComments.cpp.o -MF CMakeFiles/clownscript.dir/src/Lexer/HandleComments.cpp.o.d -o CMakeFiles/clownscript.dir/src/Lexer/HandleComments.cpp.o -c /home/mel/Documents/C++/ClownScript/src/Lexer/HandleComments.cpp
+
+CMakeFiles/clownscript.dir/src/Lexer/HandleComments.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clownscript.dir/src/Lexer/HandleComments.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mel/Documents/C++/ClownScript/src/Lexer/HandleComments.cpp > CMakeFiles/clownscript.dir/src/Lexer/HandleComments.cpp.i
+
+CMakeFiles/clownscript.dir/src/Lexer/HandleComments.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clownscript.dir/src/Lexer/HandleComments.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mel/Documents/C++/ClownScript/src/Lexer/HandleComments.cpp -o CMakeFiles/clownscript.dir/src/Lexer/HandleComments.cpp.s
+
+CMakeFiles/clownscript.dir/src/Lexer/HandleKeywordOrIdentyfier.cpp.o: CMakeFiles/clownscript.dir/flags.make
+CMakeFiles/clownscript.dir/src/Lexer/HandleKeywordOrIdentyfier.cpp.o: /home/mel/Documents/C++/ClownScript/src/Lexer/HandleKeywordOrIdentyfier.cpp
+CMakeFiles/clownscript.dir/src/Lexer/HandleKeywordOrIdentyfier.cpp.o: CMakeFiles/clownscript.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mel/Documents/C++/ClownScript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/clownscript.dir/src/Lexer/HandleKeywordOrIdentyfier.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clownscript.dir/src/Lexer/HandleKeywordOrIdentyfier.cpp.o -MF CMakeFiles/clownscript.dir/src/Lexer/HandleKeywordOrIdentyfier.cpp.o.d -o CMakeFiles/clownscript.dir/src/Lexer/HandleKeywordOrIdentyfier.cpp.o -c /home/mel/Documents/C++/ClownScript/src/Lexer/HandleKeywordOrIdentyfier.cpp
+
+CMakeFiles/clownscript.dir/src/Lexer/HandleKeywordOrIdentyfier.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clownscript.dir/src/Lexer/HandleKeywordOrIdentyfier.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mel/Documents/C++/ClownScript/src/Lexer/HandleKeywordOrIdentyfier.cpp > CMakeFiles/clownscript.dir/src/Lexer/HandleKeywordOrIdentyfier.cpp.i
+
+CMakeFiles/clownscript.dir/src/Lexer/HandleKeywordOrIdentyfier.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clownscript.dir/src/Lexer/HandleKeywordOrIdentyfier.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mel/Documents/C++/ClownScript/src/Lexer/HandleKeywordOrIdentyfier.cpp -o CMakeFiles/clownscript.dir/src/Lexer/HandleKeywordOrIdentyfier.cpp.s
+
+CMakeFiles/clownscript.dir/src/Lexer/HandlePragma.cpp.o: CMakeFiles/clownscript.dir/flags.make
+CMakeFiles/clownscript.dir/src/Lexer/HandlePragma.cpp.o: /home/mel/Documents/C++/ClownScript/src/Lexer/HandlePragma.cpp
+CMakeFiles/clownscript.dir/src/Lexer/HandlePragma.cpp.o: CMakeFiles/clownscript.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mel/Documents/C++/ClownScript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/clownscript.dir/src/Lexer/HandlePragma.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clownscript.dir/src/Lexer/HandlePragma.cpp.o -MF CMakeFiles/clownscript.dir/src/Lexer/HandlePragma.cpp.o.d -o CMakeFiles/clownscript.dir/src/Lexer/HandlePragma.cpp.o -c /home/mel/Documents/C++/ClownScript/src/Lexer/HandlePragma.cpp
+
+CMakeFiles/clownscript.dir/src/Lexer/HandlePragma.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clownscript.dir/src/Lexer/HandlePragma.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mel/Documents/C++/ClownScript/src/Lexer/HandlePragma.cpp > CMakeFiles/clownscript.dir/src/Lexer/HandlePragma.cpp.i
+
+CMakeFiles/clownscript.dir/src/Lexer/HandlePragma.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clownscript.dir/src/Lexer/HandlePragma.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mel/Documents/C++/ClownScript/src/Lexer/HandlePragma.cpp -o CMakeFiles/clownscript.dir/src/Lexer/HandlePragma.cpp.s
+
+CMakeFiles/clownscript.dir/src/Lexer/HandleStringLiteral.cpp.o: CMakeFiles/clownscript.dir/flags.make
+CMakeFiles/clownscript.dir/src/Lexer/HandleStringLiteral.cpp.o: /home/mel/Documents/C++/ClownScript/src/Lexer/HandleStringLiteral.cpp
+CMakeFiles/clownscript.dir/src/Lexer/HandleStringLiteral.cpp.o: CMakeFiles/clownscript.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mel/Documents/C++/ClownScript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/clownscript.dir/src/Lexer/HandleStringLiteral.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clownscript.dir/src/Lexer/HandleStringLiteral.cpp.o -MF CMakeFiles/clownscript.dir/src/Lexer/HandleStringLiteral.cpp.o.d -o CMakeFiles/clownscript.dir/src/Lexer/HandleStringLiteral.cpp.o -c /home/mel/Documents/C++/ClownScript/src/Lexer/HandleStringLiteral.cpp
+
+CMakeFiles/clownscript.dir/src/Lexer/HandleStringLiteral.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clownscript.dir/src/Lexer/HandleStringLiteral.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mel/Documents/C++/ClownScript/src/Lexer/HandleStringLiteral.cpp > CMakeFiles/clownscript.dir/src/Lexer/HandleStringLiteral.cpp.i
+
+CMakeFiles/clownscript.dir/src/Lexer/HandleStringLiteral.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clownscript.dir/src/Lexer/HandleStringLiteral.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mel/Documents/C++/ClownScript/src/Lexer/HandleStringLiteral.cpp -o CMakeFiles/clownscript.dir/src/Lexer/HandleStringLiteral.cpp.s
+
 CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.o: CMakeFiles/clownscript.dir/flags.make
 CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.o: /home/mel/Documents/C++/ClownScript/src/Lexer/Is.cpp
 CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.o: CMakeFiles/clownscript.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mel/Documents/C++/ClownScript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mel/Documents/C++/ClownScript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.o -MF CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.o.d -o CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.o -c /home/mel/Documents/C++/ClownScript/src/Lexer/Is.cpp
 
 CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.i: cmake_force
@@ -97,35 +153,75 @@ CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mel/Documents/C++/ClownScript/src/Lexer/Is.cpp -o CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.s
 
-CMakeFiles/clownscript.dir/src/Lexer/Tokenizer.cpp.o: CMakeFiles/clownscript.dir/flags.make
-CMakeFiles/clownscript.dir/src/Lexer/Tokenizer.cpp.o: /home/mel/Documents/C++/ClownScript/src/Lexer/Tokenizer.cpp
-CMakeFiles/clownscript.dir/src/Lexer/Tokenizer.cpp.o: CMakeFiles/clownscript.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mel/Documents/C++/ClownScript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/clownscript.dir/src/Lexer/Tokenizer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clownscript.dir/src/Lexer/Tokenizer.cpp.o -MF CMakeFiles/clownscript.dir/src/Lexer/Tokenizer.cpp.o.d -o CMakeFiles/clownscript.dir/src/Lexer/Tokenizer.cpp.o -c /home/mel/Documents/C++/ClownScript/src/Lexer/Tokenizer.cpp
+CMakeFiles/clownscript.dir/src/Lexer/Tokenize.cpp.o: CMakeFiles/clownscript.dir/flags.make
+CMakeFiles/clownscript.dir/src/Lexer/Tokenize.cpp.o: /home/mel/Documents/C++/ClownScript/src/Lexer/Tokenize.cpp
+CMakeFiles/clownscript.dir/src/Lexer/Tokenize.cpp.o: CMakeFiles/clownscript.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mel/Documents/C++/ClownScript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/clownscript.dir/src/Lexer/Tokenize.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clownscript.dir/src/Lexer/Tokenize.cpp.o -MF CMakeFiles/clownscript.dir/src/Lexer/Tokenize.cpp.o.d -o CMakeFiles/clownscript.dir/src/Lexer/Tokenize.cpp.o -c /home/mel/Documents/C++/ClownScript/src/Lexer/Tokenize.cpp
 
-CMakeFiles/clownscript.dir/src/Lexer/Tokenizer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clownscript.dir/src/Lexer/Tokenizer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mel/Documents/C++/ClownScript/src/Lexer/Tokenizer.cpp > CMakeFiles/clownscript.dir/src/Lexer/Tokenizer.cpp.i
+CMakeFiles/clownscript.dir/src/Lexer/Tokenize.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clownscript.dir/src/Lexer/Tokenize.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mel/Documents/C++/ClownScript/src/Lexer/Tokenize.cpp > CMakeFiles/clownscript.dir/src/Lexer/Tokenize.cpp.i
 
-CMakeFiles/clownscript.dir/src/Lexer/Tokenizer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clownscript.dir/src/Lexer/Tokenizer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mel/Documents/C++/ClownScript/src/Lexer/Tokenizer.cpp -o CMakeFiles/clownscript.dir/src/Lexer/Tokenizer.cpp.s
+CMakeFiles/clownscript.dir/src/Lexer/Tokenize.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clownscript.dir/src/Lexer/Tokenize.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mel/Documents/C++/ClownScript/src/Lexer/Tokenize.cpp -o CMakeFiles/clownscript.dir/src/Lexer/Tokenize.cpp.s
+
+CMakeFiles/clownscript.dir/src/Lexer/Tokenizer_Constructors.cpp.o: CMakeFiles/clownscript.dir/flags.make
+CMakeFiles/clownscript.dir/src/Lexer/Tokenizer_Constructors.cpp.o: /home/mel/Documents/C++/ClownScript/src/Lexer/Tokenizer_Constructors.cpp
+CMakeFiles/clownscript.dir/src/Lexer/Tokenizer_Constructors.cpp.o: CMakeFiles/clownscript.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mel/Documents/C++/ClownScript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/clownscript.dir/src/Lexer/Tokenizer_Constructors.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clownscript.dir/src/Lexer/Tokenizer_Constructors.cpp.o -MF CMakeFiles/clownscript.dir/src/Lexer/Tokenizer_Constructors.cpp.o.d -o CMakeFiles/clownscript.dir/src/Lexer/Tokenizer_Constructors.cpp.o -c /home/mel/Documents/C++/ClownScript/src/Lexer/Tokenizer_Constructors.cpp
+
+CMakeFiles/clownscript.dir/src/Lexer/Tokenizer_Constructors.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clownscript.dir/src/Lexer/Tokenizer_Constructors.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mel/Documents/C++/ClownScript/src/Lexer/Tokenizer_Constructors.cpp > CMakeFiles/clownscript.dir/src/Lexer/Tokenizer_Constructors.cpp.i
+
+CMakeFiles/clownscript.dir/src/Lexer/Tokenizer_Constructors.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clownscript.dir/src/Lexer/Tokenizer_Constructors.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mel/Documents/C++/ClownScript/src/Lexer/Tokenizer_Constructors.cpp -o CMakeFiles/clownscript.dir/src/Lexer/Tokenizer_Constructors.cpp.s
+
+CMakeFiles/clownscript.dir/src/QuickTools/Console/Console.cpp.o: CMakeFiles/clownscript.dir/flags.make
+CMakeFiles/clownscript.dir/src/QuickTools/Console/Console.cpp.o: /home/mel/Documents/C++/ClownScript/src/QuickTools/Console/Console.cpp
+CMakeFiles/clownscript.dir/src/QuickTools/Console/Console.cpp.o: CMakeFiles/clownscript.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mel/Documents/C++/ClownScript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/clownscript.dir/src/QuickTools/Console/Console.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/clownscript.dir/src/QuickTools/Console/Console.cpp.o -MF CMakeFiles/clownscript.dir/src/QuickTools/Console/Console.cpp.o.d -o CMakeFiles/clownscript.dir/src/QuickTools/Console/Console.cpp.o -c /home/mel/Documents/C++/ClownScript/src/QuickTools/Console/Console.cpp
+
+CMakeFiles/clownscript.dir/src/QuickTools/Console/Console.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clownscript.dir/src/QuickTools/Console/Console.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mel/Documents/C++/ClownScript/src/QuickTools/Console/Console.cpp > CMakeFiles/clownscript.dir/src/QuickTools/Console/Console.cpp.i
+
+CMakeFiles/clownscript.dir/src/QuickTools/Console/Console.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clownscript.dir/src/QuickTools/Console/Console.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mel/Documents/C++/ClownScript/src/QuickTools/Console/Console.cpp -o CMakeFiles/clownscript.dir/src/QuickTools/Console/Console.cpp.s
 
 # Object files for target clownscript
 clownscript_OBJECTS = \
 "CMakeFiles/clownscript.dir/src/Init/main.cpp.o" \
+"CMakeFiles/clownscript.dir/src/Lexer/HandleComments.cpp.o" \
+"CMakeFiles/clownscript.dir/src/Lexer/HandleKeywordOrIdentyfier.cpp.o" \
+"CMakeFiles/clownscript.dir/src/Lexer/HandlePragma.cpp.o" \
+"CMakeFiles/clownscript.dir/src/Lexer/HandleStringLiteral.cpp.o" \
 "CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.o" \
-"CMakeFiles/clownscript.dir/src/Lexer/Tokenizer.cpp.o"
+"CMakeFiles/clownscript.dir/src/Lexer/Tokenize.cpp.o" \
+"CMakeFiles/clownscript.dir/src/Lexer/Tokenizer_Constructors.cpp.o" \
+"CMakeFiles/clownscript.dir/src/QuickTools/Console/Console.cpp.o"
 
 # External object files for target clownscript
 clownscript_EXTERNAL_OBJECTS =
 
 clownscript: CMakeFiles/clownscript.dir/src/Init/main.cpp.o
+clownscript: CMakeFiles/clownscript.dir/src/Lexer/HandleComments.cpp.o
+clownscript: CMakeFiles/clownscript.dir/src/Lexer/HandleKeywordOrIdentyfier.cpp.o
+clownscript: CMakeFiles/clownscript.dir/src/Lexer/HandlePragma.cpp.o
+clownscript: CMakeFiles/clownscript.dir/src/Lexer/HandleStringLiteral.cpp.o
 clownscript: CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.o
-clownscript: CMakeFiles/clownscript.dir/src/Lexer/Tokenizer.cpp.o
+clownscript: CMakeFiles/clownscript.dir/src/Lexer/Tokenize.cpp.o
+clownscript: CMakeFiles/clownscript.dir/src/Lexer/Tokenizer_Constructors.cpp.o
+clownscript: CMakeFiles/clownscript.dir/src/QuickTools/Console/Console.cpp.o
 clownscript: CMakeFiles/clownscript.dir/build.make
 clownscript: CMakeFiles/clownscript.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mel/Documents/C++/ClownScript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable clownscript"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mel/Documents/C++/ClownScript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable clownscript"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/clownscript.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

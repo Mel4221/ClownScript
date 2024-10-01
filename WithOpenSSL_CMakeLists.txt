@@ -1,0 +1,49 @@
+cmake_minimum_required(VERSION 3.10)
+set(CMAKE_CXX_STANDARD 11)   # You can change this to 11, 14, 17, etc.
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF) # Disable compiler-specific extensions
+
+# Set the project name and specify the languages used
+project(ClownScript VERSION 0.0.1)
+
+# Add your source files
+# Collecting the SRC .cpp files from ClownScript
+file(GLOB_RECURSE CLOWN_SCRIPT_CPP ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp)
+
+# Create the executable
+add_executable(clownscript ${CLOWN_SCRIPT_CPP})
+
+# Optionally, specify include directories
+target_include_directories(clownscript PUBLIC include)
+
+# Cross-platform settings
+if (WIN32)
+    # Windows-specific settings
+    message(STATUS "Configuring for Windows")
+    find_package(OpenSSL REQUIRED)
+    target_link_libraries(clownscript PRIVATE OpenSSL::SSL OpenSSL::Crypto)
+elseif(APPLE)
+    # macOS-specific settings
+    message(STATUS "Configuring for macOS")
+    find_package(OpenSSL REQUIRED)
+    target_link_libraries(clownscript PRIVATE OpenSSL::SSL OpenSSL::Crypto)
+elseif(UNIX)
+    # Unix/Linux-specific settings
+    message(STATUS "Configuring for Unix/Linux")
+    find_package(OpenSSL REQUIRED)
+    target_link_libraries(clownscript PRIVATE OpenSSL::SSL OpenSSL::Crypto)
+else()
+    message(FATAL_ERROR "Unsupported platform")
+endif()
+
+# Set output directories (optional)
+set_target_properties(clownscript PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
+    LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib
+    ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib
+)
+
+# Optionally include a custom command for running tests or other post-build actions
+# add_custom_command(TARGET clownscript POST_BUILD
+#     COMMAND ${CMAKE_COMMAND} -E echo "Executable built successfully!"
+# )

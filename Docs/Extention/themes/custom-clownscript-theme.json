@@ -1,0 +1,28 @@
+{
+    "name": "Custom ClownScript Theme",
+    "type": "dark",
+    "colors": {
+        "editor.foreground": "#FFFFFF",
+        "editor.background": "#000000"
+    },
+    "tokenColors": [
+        {
+            "scope": "keyword.control.clownscript",
+            "settings": {
+                "foreground": "#FF0000"  
+            }
+        },
+        {
+            "scope": "keyword.operator.clownscript",
+            "settings": {
+                "foreground": "#0000FF" 
+            }
+        },
+        {
+            "scope": "entity.other.clownscript",
+            "settings": {
+                "foreground": "#00FF00" 
+            }
+        }
+    ]
+}

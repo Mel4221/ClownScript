@@ -38,6 +38,7 @@ namespace ClownScript
             Float,
             Long,
             StringLiteral,
+            String,
             Char,
             Unknown
             

@@ -9,8 +9,8 @@ include "notes.txt"
 namespace "updater"
 
 string text = "some text right there"
-# and this is a compiler flag or 
-// this is a single line comment 
+# and this is a compiler comments
+// this is a single line comment
 /*
     this is a multy line comment 
 */
@@ -25,7 +25,7 @@ and the other one more similar to bash
 @person.user_email = "mel@gmail.com" 
 
 $update_out = $"{shell_temp/update.clown}" 
-# compiler flags will be added with the pound simbol 
+# compiler pragma will be added with the pound simbol 
 // Sytle 1
 update ->
     wget "http://www.github.com/user/updates.clown" -o $update_out
@@ -121,9 +121,9 @@ print sum [1,1,1,1,1,1,1,1,1,1]
 
 @car
 [
-    model = ""
+    model = " "
     int made = 0
-    id = ""
+    id = " "
     @car -> 
     # constructor
     int length = 16
@@ -165,7 +165,7 @@ print @fruits.length
 public @house 
 [
     @garage = [] 
-    @add -> @car*
+    @add -> @car
         @garage.add(@car*)
         return     
 ]
@@ -189,3 +189,18 @@ run_actions(@action,@action2,@action2)
 public main -> @args
     if @args[0] == "update"
         update()
+
+// this is a single line comment
+
+/*
+    this is a multy line comment 
+*/
+
+/*
+There are 2 styles that i have in mind 
+one that looks more like a functional language
+and the other one more similar to bash
+*/
+
+
+//d t f k like

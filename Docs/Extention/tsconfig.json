@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "outDir": "out",
+        "sourceMap": true,
+        "rootDir": ".",
+        "target": "ES6",
+        "module": "commonjs",
+        "lib": ["ES6", "DOM"],
+        "strict": true
+    },
+    "include": [
+        "extension.ts" // Make sure to include your TypeScript files
+    ]
+}

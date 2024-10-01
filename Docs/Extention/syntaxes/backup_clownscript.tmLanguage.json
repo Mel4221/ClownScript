@@ -1,0 +1,58 @@
+{
+    "scopeName": "source.clownscript",
+    "patterns": [
+        {
+            "name": "comment.line.double-slash.clownscript",
+            "begin": "//",
+            "end": "$"
+        },
+        {
+            "name": "comment.block.clownscript",
+            "begin": "/\\*",
+            "end": "\\*/"
+        },
+        {
+            "name": "keyword.control.clownscript",
+            "match": "\\b(namespace|return|try|catch|async|await|if|foreach|for)\\b"
+        },
+        {
+            "name": "keyword.operator.clownscript",
+            "match": "\\b(update|print|wget|clear_temp|sum|add)\\b"
+        },
+        {
+            "name": "string.quoted.double.clownscript",
+            "begin": "\"",
+            "end": "\""
+        },
+        {
+            "name": "variable.parameter.clownscript",
+            "match": "\\$[a-zA-Z_][a-zA-Z0-9_]*"
+        },
+        {
+            "name": "variable.other.clownscript",
+            "match": "@[a-zA-Z_][a-zA-Z0-9_]*"
+        },
+        {
+            "name": "constant.numeric.clownscript",
+            "match": "\\b\\d+\\b"
+        },
+        {
+            "name": "entity.other.clownscript",
+            "match": "\\b(string|int|void|double|float|char|byte|array|object)\\b"
+        },
+        {
+            "name": "punctuation.separator.clownscript",
+            "match": "[=\\-\\+\\*\\/\\&\\|\\!\\?<>:]"
+        },
+        {
+            "name": "meta.namespace.clownscript",
+            "match": "\\b(include|import)\\b"
+        },
+        {
+            "name": "entity.function.clownscript",
+            "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\s*->"
+        }
+    ],
+    "repository": {},
+    "scopeName": "source.clownscript"
+}

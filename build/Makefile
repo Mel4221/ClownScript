@@ -153,6 +153,102 @@ src/Init/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Init/main.cpp.s
 .PHONY : src/Init/main.cpp.s
 
+src/Lexer/HandleComments.o: src/Lexer/HandleComments.cpp.o
+.PHONY : src/Lexer/HandleComments.o
+
+# target to build an object file
+src/Lexer/HandleComments.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/HandleComments.cpp.o
+.PHONY : src/Lexer/HandleComments.cpp.o
+
+src/Lexer/HandleComments.i: src/Lexer/HandleComments.cpp.i
+.PHONY : src/Lexer/HandleComments.i
+
+# target to preprocess a source file
+src/Lexer/HandleComments.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/HandleComments.cpp.i
+.PHONY : src/Lexer/HandleComments.cpp.i
+
+src/Lexer/HandleComments.s: src/Lexer/HandleComments.cpp.s
+.PHONY : src/Lexer/HandleComments.s
+
+# target to generate assembly for a file
+src/Lexer/HandleComments.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/HandleComments.cpp.s
+.PHONY : src/Lexer/HandleComments.cpp.s
+
+src/Lexer/HandleKeywordOrIdentyfier.o: src/Lexer/HandleKeywordOrIdentyfier.cpp.o
+.PHONY : src/Lexer/HandleKeywordOrIdentyfier.o
+
+# target to build an object file
+src/Lexer/HandleKeywordOrIdentyfier.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/HandleKeywordOrIdentyfier.cpp.o
+.PHONY : src/Lexer/HandleKeywordOrIdentyfier.cpp.o
+
+src/Lexer/HandleKeywordOrIdentyfier.i: src/Lexer/HandleKeywordOrIdentyfier.cpp.i
+.PHONY : src/Lexer/HandleKeywordOrIdentyfier.i
+
+# target to preprocess a source file
+src/Lexer/HandleKeywordOrIdentyfier.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/HandleKeywordOrIdentyfier.cpp.i
+.PHONY : src/Lexer/HandleKeywordOrIdentyfier.cpp.i
+
+src/Lexer/HandleKeywordOrIdentyfier.s: src/Lexer/HandleKeywordOrIdentyfier.cpp.s
+.PHONY : src/Lexer/HandleKeywordOrIdentyfier.s
+
+# target to generate assembly for a file
+src/Lexer/HandleKeywordOrIdentyfier.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/HandleKeywordOrIdentyfier.cpp.s
+.PHONY : src/Lexer/HandleKeywordOrIdentyfier.cpp.s
+
+src/Lexer/HandlePragma.o: src/Lexer/HandlePragma.cpp.o
+.PHONY : src/Lexer/HandlePragma.o
+
+# target to build an object file
+src/Lexer/HandlePragma.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/HandlePragma.cpp.o
+.PHONY : src/Lexer/HandlePragma.cpp.o
+
+src/Lexer/HandlePragma.i: src/Lexer/HandlePragma.cpp.i
+.PHONY : src/Lexer/HandlePragma.i
+
+# target to preprocess a source file
+src/Lexer/HandlePragma.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/HandlePragma.cpp.i
+.PHONY : src/Lexer/HandlePragma.cpp.i
+
+src/Lexer/HandlePragma.s: src/Lexer/HandlePragma.cpp.s
+.PHONY : src/Lexer/HandlePragma.s
+
+# target to generate assembly for a file
+src/Lexer/HandlePragma.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/HandlePragma.cpp.s
+.PHONY : src/Lexer/HandlePragma.cpp.s
+
+src/Lexer/HandleStringLiteral.o: src/Lexer/HandleStringLiteral.cpp.o
+.PHONY : src/Lexer/HandleStringLiteral.o
+
+# target to build an object file
+src/Lexer/HandleStringLiteral.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/HandleStringLiteral.cpp.o
+.PHONY : src/Lexer/HandleStringLiteral.cpp.o
+
+src/Lexer/HandleStringLiteral.i: src/Lexer/HandleStringLiteral.cpp.i
+.PHONY : src/Lexer/HandleStringLiteral.i
+
+# target to preprocess a source file
+src/Lexer/HandleStringLiteral.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/HandleStringLiteral.cpp.i
+.PHONY : src/Lexer/HandleStringLiteral.cpp.i
+
+src/Lexer/HandleStringLiteral.s: src/Lexer/HandleStringLiteral.cpp.s
+.PHONY : src/Lexer/HandleStringLiteral.s
+
+# target to generate assembly for a file
+src/Lexer/HandleStringLiteral.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/HandleStringLiteral.cpp.s
+.PHONY : src/Lexer/HandleStringLiteral.cpp.s
+
 src/Lexer/Is.o: src/Lexer/Is.cpp.o
 .PHONY : src/Lexer/Is.o
 
@@ -177,29 +273,77 @@ src/Lexer/Is.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.s
 .PHONY : src/Lexer/Is.cpp.s
 
-src/Lexer/Tokenizer.o: src/Lexer/Tokenizer.cpp.o
-.PHONY : src/Lexer/Tokenizer.o
+src/Lexer/Tokenize.o: src/Lexer/Tokenize.cpp.o
+.PHONY : src/Lexer/Tokenize.o
 
 # target to build an object file
-src/Lexer/Tokenizer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/Tokenizer.cpp.o
-.PHONY : src/Lexer/Tokenizer.cpp.o
+src/Lexer/Tokenize.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/Tokenize.cpp.o
+.PHONY : src/Lexer/Tokenize.cpp.o
 
-src/Lexer/Tokenizer.i: src/Lexer/Tokenizer.cpp.i
-.PHONY : src/Lexer/Tokenizer.i
+src/Lexer/Tokenize.i: src/Lexer/Tokenize.cpp.i
+.PHONY : src/Lexer/Tokenize.i
 
 # target to preprocess a source file
-src/Lexer/Tokenizer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/Tokenizer.cpp.i
-.PHONY : src/Lexer/Tokenizer.cpp.i
+src/Lexer/Tokenize.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/Tokenize.cpp.i
+.PHONY : src/Lexer/Tokenize.cpp.i
 
-src/Lexer/Tokenizer.s: src/Lexer/Tokenizer.cpp.s
-.PHONY : src/Lexer/Tokenizer.s
+src/Lexer/Tokenize.s: src/Lexer/Tokenize.cpp.s
+.PHONY : src/Lexer/Tokenize.s
 
 # target to generate assembly for a file
-src/Lexer/Tokenizer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/Tokenizer.cpp.s
-.PHONY : src/Lexer/Tokenizer.cpp.s
+src/Lexer/Tokenize.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/Tokenize.cpp.s
+.PHONY : src/Lexer/Tokenize.cpp.s
+
+src/Lexer/Tokenizer_Constructors.o: src/Lexer/Tokenizer_Constructors.cpp.o
+.PHONY : src/Lexer/Tokenizer_Constructors.o
+
+# target to build an object file
+src/Lexer/Tokenizer_Constructors.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/Tokenizer_Constructors.cpp.o
+.PHONY : src/Lexer/Tokenizer_Constructors.cpp.o
+
+src/Lexer/Tokenizer_Constructors.i: src/Lexer/Tokenizer_Constructors.cpp.i
+.PHONY : src/Lexer/Tokenizer_Constructors.i
+
+# target to preprocess a source file
+src/Lexer/Tokenizer_Constructors.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/Tokenizer_Constructors.cpp.i
+.PHONY : src/Lexer/Tokenizer_Constructors.cpp.i
+
+src/Lexer/Tokenizer_Constructors.s: src/Lexer/Tokenizer_Constructors.cpp.s
+.PHONY : src/Lexer/Tokenizer_Constructors.s
+
+# target to generate assembly for a file
+src/Lexer/Tokenizer_Constructors.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/Tokenizer_Constructors.cpp.s
+.PHONY : src/Lexer/Tokenizer_Constructors.cpp.s
+
+src/QuickTools/Console/Console.o: src/QuickTools/Console/Console.cpp.o
+.PHONY : src/QuickTools/Console/Console.o
+
+# target to build an object file
+src/QuickTools/Console/Console.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/QuickTools/Console/Console.cpp.o
+.PHONY : src/QuickTools/Console/Console.cpp.o
+
+src/QuickTools/Console/Console.i: src/QuickTools/Console/Console.cpp.i
+.PHONY : src/QuickTools/Console/Console.i
+
+# target to preprocess a source file
+src/QuickTools/Console/Console.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/QuickTools/Console/Console.cpp.i
+.PHONY : src/QuickTools/Console/Console.cpp.i
+
+src/QuickTools/Console/Console.s: src/QuickTools/Console/Console.cpp.s
+.PHONY : src/QuickTools/Console/Console.s
+
+# target to generate assembly for a file
+src/QuickTools/Console/Console.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/QuickTools/Console/Console.cpp.s
+.PHONY : src/QuickTools/Console/Console.cpp.s
 
 # Help Target
 help:
@@ -213,12 +357,30 @@ help:
 	@echo "... src/Init/main.o"
 	@echo "... src/Init/main.i"
 	@echo "... src/Init/main.s"
+	@echo "... src/Lexer/HandleComments.o"
+	@echo "... src/Lexer/HandleComments.i"
+	@echo "... src/Lexer/HandleComments.s"
+	@echo "... src/Lexer/HandleKeywordOrIdentyfier.o"
+	@echo "... src/Lexer/HandleKeywordOrIdentyfier.i"
+	@echo "... src/Lexer/HandleKeywordOrIdentyfier.s"
+	@echo "... src/Lexer/HandlePragma.o"
+	@echo "... src/Lexer/HandlePragma.i"
+	@echo "... src/Lexer/HandlePragma.s"
+	@echo "... src/Lexer/HandleStringLiteral.o"
+	@echo "... src/Lexer/HandleStringLiteral.i"
+	@echo "... src/Lexer/HandleStringLiteral.s"
 	@echo "... src/Lexer/Is.o"
 	@echo "... src/Lexer/Is.i"
 	@echo "... src/Lexer/Is.s"
-	@echo "... src/Lexer/Tokenizer.o"
-	@echo "... src/Lexer/Tokenizer.i"
-	@echo "... src/Lexer/Tokenizer.s"
+	@echo "... src/Lexer/Tokenize.o"
+	@echo "... src/Lexer/Tokenize.i"
+	@echo "... src/Lexer/Tokenize.s"
+	@echo "... src/Lexer/Tokenizer_Constructors.o"
+	@echo "... src/Lexer/Tokenizer_Constructors.i"
+	@echo "... src/Lexer/Tokenizer_Constructors.s"
+	@echo "... src/QuickTools/Console/Console.o"
+	@echo "... src/QuickTools/Console/Console.i"
+	@echo "... src/QuickTools/Console/Console.s"
 .PHONY : help
 
 

@@ -171,4 +171,5 @@ CMakeFiles/clownscript.dir/src/Init/main.cpp.o: \
  /usr/include/c++/12/bits/algorithmfwd.h \
  /usr/include/c++/12/bits/stl_heap.h \
  /usr/include/c++/12/bits/stl_tempbuf.h \
- /usr/include/c++/12/bits/uniform_int_dist.h
+ /usr/include/c++/12/bits/uniform_int_dist.h \
+ /home/mel/Documents/C++/ClownScript/src/Init/../../include/Lexer/../QuickTools/Console/Console.hpp

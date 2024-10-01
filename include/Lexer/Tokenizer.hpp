@@ -3,6 +3,9 @@
 #include <vector>
 #include <string>
 #include "Token.hpp"
+#include "../QuickTools/Console/Console.hpp"
+
+
 //#include "Is.hpp"
 //#include "Convert.hpp"
 
@@ -20,8 +23,9 @@ namespace ClownScript
             private:int Line;
             private:vector<Token> Tokens; 
             public: vector<Token> Tokenize();
+            public: bool PrintComments;
             public: vector<Token> Tokenize(string input);
-            public: void HandleSingleLineComments();
+            public: void HandlePragma();
             public: void HandleComments();
             public: Token HandleStringLiteral(); 
             public: Token HandleKeywordOrIdentyfier();
