@@ -13,6 +13,7 @@ Token Tokenizer::HandleKeywordOrIdentyfier()
 {
     Token token; 
     int start = Column;
+    TokenType type = TokenType::Unknown;
 
     while(Column < Input.length() && 
         isalpha(Input[Column])||
@@ -22,10 +23,15 @@ Token Tokenizer::HandleKeywordOrIdentyfier()
             //cout << "HandleKeywordOrIdentyfier..: " << Current << endl;
             Column++;//Keep Moving Foward
         } 
-
         string value = Input.substr(start,Column - start);
+        type = Token::ParseToType(value); 
+        if(Input[start-1] == '@' && 
+            type == TokenType::Unknown)
+        {
+            type = TokenType::Object;
+        }
 
-        token.Type = Token::ParseToType(value); 
+        token.Type = type; 
         token.Line = Line;
         token.Column = Column;
         token.Value = value;  

@@ -42,7 +42,7 @@ Token Tokenizer::HandleStringLiteral()
         */
         Column++;
     }
-    Console::Wait(Input.substr(start, Column - start));
+    //Console::Wait(Input.substr(start, Column - start));
     if (!isPair) {
         string error = "Line: " + to_string(line) +" "+Input.substr(0,line);
         throw runtime_error("Not closing string literal..: "+error);

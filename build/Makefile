@@ -249,6 +249,30 @@ src/Lexer/HandleStringLiteral.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/HandleStringLiteral.cpp.s
 .PHONY : src/Lexer/HandleStringLiteral.cpp.s
 
+src/Lexer/HandleSymbol.o: src/Lexer/HandleSymbol.cpp.o
+.PHONY : src/Lexer/HandleSymbol.o
+
+# target to build an object file
+src/Lexer/HandleSymbol.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/HandleSymbol.cpp.o
+.PHONY : src/Lexer/HandleSymbol.cpp.o
+
+src/Lexer/HandleSymbol.i: src/Lexer/HandleSymbol.cpp.i
+.PHONY : src/Lexer/HandleSymbol.i
+
+# target to preprocess a source file
+src/Lexer/HandleSymbol.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/HandleSymbol.cpp.i
+.PHONY : src/Lexer/HandleSymbol.cpp.i
+
+src/Lexer/HandleSymbol.s: src/Lexer/HandleSymbol.cpp.s
+.PHONY : src/Lexer/HandleSymbol.s
+
+# target to generate assembly for a file
+src/Lexer/HandleSymbol.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clownscript.dir/build.make CMakeFiles/clownscript.dir/src/Lexer/HandleSymbol.cpp.s
+.PHONY : src/Lexer/HandleSymbol.cpp.s
+
 src/Lexer/Is.o: src/Lexer/Is.cpp.o
 .PHONY : src/Lexer/Is.o
 
@@ -369,6 +393,9 @@ help:
 	@echo "... src/Lexer/HandleStringLiteral.o"
 	@echo "... src/Lexer/HandleStringLiteral.i"
 	@echo "... src/Lexer/HandleStringLiteral.s"
+	@echo "... src/Lexer/HandleSymbol.o"
+	@echo "... src/Lexer/HandleSymbol.i"
+	@echo "... src/Lexer/HandleSymbol.s"
 	@echo "... src/Lexer/Is.o"
 	@echo "... src/Lexer/Is.i"
 	@echo "... src/Lexer/Is.s"

@@ -40,7 +40,7 @@ namespace ClownScript
             StringLiteral,
             String,
             Char,
-            Unknown
+            Unknown,
             
         };
     

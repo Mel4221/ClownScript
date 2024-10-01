@@ -29,7 +29,7 @@ void Tokenizer::HandlePragma()
             }
 
                 std::ostringstream oss;
-                oss << "pragma: " << Input.substr(start, Column - start) << std::endl;
+                oss << "compiler_comment: " << Input.substr(start, Column - start) << std::endl;
                
                 Console::Print(oss.str(),"pink");
                 //Console::Print("","green");//just on my ter

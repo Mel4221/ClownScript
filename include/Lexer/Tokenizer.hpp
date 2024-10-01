@@ -27,6 +27,7 @@ namespace ClownScript
             public: vector<Token> Tokenize(string input);
             public: void HandlePragma();
             public: void HandleComments();
+            public: Token HandleSymbol();
             public: Token HandleStringLiteral(); 
             public: Token HandleKeywordOrIdentyfier();
             public: Tokenizer();

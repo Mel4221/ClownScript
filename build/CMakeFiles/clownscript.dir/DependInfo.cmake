@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/mel/Documents/C++/ClownScript/src/Lexer/HandleKeywordOrIdentyfier.cpp" "CMakeFiles/clownscript.dir/src/Lexer/HandleKeywordOrIdentyfier.cpp.o" "gcc" "CMakeFiles/clownscript.dir/src/Lexer/HandleKeywordOrIdentyfier.cpp.o.d"
   "/home/mel/Documents/C++/ClownScript/src/Lexer/HandlePragma.cpp" "CMakeFiles/clownscript.dir/src/Lexer/HandlePragma.cpp.o" "gcc" "CMakeFiles/clownscript.dir/src/Lexer/HandlePragma.cpp.o.d"
   "/home/mel/Documents/C++/ClownScript/src/Lexer/HandleStringLiteral.cpp" "CMakeFiles/clownscript.dir/src/Lexer/HandleStringLiteral.cpp.o" "gcc" "CMakeFiles/clownscript.dir/src/Lexer/HandleStringLiteral.cpp.o.d"
+  "/home/mel/Documents/C++/ClownScript/src/Lexer/HandleSymbol.cpp" "CMakeFiles/clownscript.dir/src/Lexer/HandleSymbol.cpp.o" "gcc" "CMakeFiles/clownscript.dir/src/Lexer/HandleSymbol.cpp.o.d"
   "/home/mel/Documents/C++/ClownScript/src/Lexer/Is.cpp" "CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.o" "gcc" "CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.o.d"
   "/home/mel/Documents/C++/ClownScript/src/Lexer/Tokenize.cpp" "CMakeFiles/clownscript.dir/src/Lexer/Tokenize.cpp.o" "gcc" "CMakeFiles/clownscript.dir/src/Lexer/Tokenize.cpp.o.d"
   "/home/mel/Documents/C++/ClownScript/src/Lexer/Tokenizer_Constructors.cpp" "CMakeFiles/clownscript.dir/src/Lexer/Tokenizer_Constructors.cpp.o" "gcc" "CMakeFiles/clownscript.dir/src/Lexer/Tokenizer_Constructors.cpp.o.d"

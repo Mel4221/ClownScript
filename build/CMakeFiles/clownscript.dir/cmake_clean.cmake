@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/clownscript.dir/src/Lexer/HandlePragma.cpp.o.d"
   "CMakeFiles/clownscript.dir/src/Lexer/HandleStringLiteral.cpp.o"
   "CMakeFiles/clownscript.dir/src/Lexer/HandleStringLiteral.cpp.o.d"
+  "CMakeFiles/clownscript.dir/src/Lexer/HandleSymbol.cpp.o"
+  "CMakeFiles/clownscript.dir/src/Lexer/HandleSymbol.cpp.o.d"
   "CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.o"
   "CMakeFiles/clownscript.dir/src/Lexer/Is.cpp.o.d"
   "CMakeFiles/clownscript.dir/src/Lexer/Tokenize.cpp.o"

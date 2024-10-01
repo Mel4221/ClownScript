@@ -140,6 +140,27 @@ static TokenType ParseToType(const std::string& value)
             << "}" << std::endl;
         return oss.str(); // Return the string representation
     }
+        public:string ToJson()const
+        {
+            string type = ToType(); 
+            string value = "\"" + Value + "\"";
+            if(type == "stringliteral")
+            {
+                value = Value; 
+            }
+            std::ostringstream oss; // Create a string stream
+            oss << "{" << std::endl
+            << "\t\"Token\":" << std::endl
+            << "\t{" << std::endl
+            << "\t\t\"Type\": " <<"\""<< type <<"\"" <<","<< std::endl
+            << "\t\t\"Value\": "<<value<< ","<< std::endl
+            << "\t\t\"Line\": " << (Line + 1)<<","<< std::endl
+            << "\t\t\"Column\": " << (Column + 1) << ","<< std::endl
+            << "\t}" << std::endl
+            << "}" << std::endl;
+
+        return oss.str(); 
+        }
 
             public:Token()
             {
